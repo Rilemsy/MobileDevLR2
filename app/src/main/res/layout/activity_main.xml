@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:padding="0dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="ax^2 + bx + c = 0"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/paramAEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите параметр a"
+            android:inputType="numberSigned|numberDecimal"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/paramBEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите параметр b"
+            android:inputType="numberSigned|numberDecimal"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/paramCEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите параметр c"
+            android:inputType="numberSigned|numberDecimal"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:onClick="calculate"
+            android:text="Решить"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/answerTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Ответ: "
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/p2Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:onClick="switchToP2"
+            android:text="п.2" />
+
+    </LinearLayout>
+
+
+
